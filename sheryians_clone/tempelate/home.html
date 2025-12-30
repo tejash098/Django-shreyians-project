@@ -1,0 +1,2108 @@
+{% load static %} <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-RT36RYDNZL"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      console.log("object is ready");
+      gtag("config", "G-RT36RYDNZL");
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N9CBSHXN");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Learn how to build modern websites with animations, explore awwwards-winning or award-winning websites, and courses on website creation. Master web technologies like Node.js, MongoDB, Socket.io, and databases such as DBMS. Dive into programming with Java, C, Python, and explore data analysis, blockchain, CPT, aptitude, HTML, CSS, and JavaScript for a comprehensive learning experience in modern web technologies."
+    />
+    <meta
+      name="keywords"
+      content="modern web technologies, animations, award-winning websites, Node.js, MongoDB, Socket.io, DBMS, Java, C, Python, data analysis, blockchain, CPT, aptitude, HTML, CSS, JavaScript"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.sheryians.com" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Sheryians Coding School | Learn Coding in India</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="{% static 'images/favicon-96x96.png' %}"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="{% static 'images/favicon.svg' %}"
+    />
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{% static 'images/apple-touch-icon.png' %}"
+    />
+    <link rel="manifest" href="{% static 'site.webmanifest' %}" />
+    <link href="{% static 'css/remixicon.css' %}" rel="stylesheet" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="{% static 'ms-icon-144x144.png' %}"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="{% static 'css/common.css' %}" />
+
+    <script defer="">
+      function hidePreLoader() {
+        document.querySelector("#preLoder").style.opacity = "0";
+        setTimeout(() => {
+          document.querySelector("#preLoder").style.display = "none";
+        }, 500);
+      }
+
+      function observeAndCallback(element, callback, options) {
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              callback(entry.target); // Run the callback when the element is intersecting
+              observer.disconnect(); // Disconnect the observer after the callback is executed
+            }
+          });
+        }, options);
+
+        observer.observe(element);
+      }
+
+      function applyLazyLoading() {
+        document
+          .querySelectorAll("[load-lazy]")
+          .forEach((lazyLoadingElement) => {
+            function callbackFunction() {
+              const src = lazyLoadingElement.getAttribute("load-lazy");
+              lazyLoadingElement.removeAttribute("load-lazy");
+              lazyLoadingElement.setAttribute("src", src);
+            }
+
+            observeAndCallback(lazyLoadingElement, callbackFunction, {
+              threshold: 0.5,
+            });
+          });
+      }
+
+      window.addEventListener("DOMContentLoaded", (event) => {
+        applyLazyLoading();
+      });
+    </script>
+
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <title>Sheryians Coding School | Learn Coding in India</title>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "632198189232294");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=632198189232294&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+
+  <body>
+    <main>
+      <!-- <section onclick="closePopupCard(this)" class="live-batch-popup">
+      <div class="box">
+        <i  class="ri-close-line cancel"></i>
+        <div class="content" >
+          <i class="ri-gift-2-fill gift-icon"></i>
+          <h1>💥Holi Dhamaka Offer💥</h1>
+          <p>Celebrate this festival of colors with exciting discounts!</p>
+          <h6>Get Flat 20% OFF on all courses!</h6>
+          <div class="parentDiv">
+            <div class="copy" onclick="copyToClipboard('HOLI2025')">
+              <p class="clicktocopy">Click to Copy</p>
+            </div>
+            <div onclick="copyToClipboard('HOLI2025')" class="coupon">
+              <p>Use coupon code </p>
+              <span>HOLI2025</span>
+            </div>
+          </div>
+          <button class="redeem" onclick="redeemCoupon()">Redeem Now</button>
+        </div>
+      </div>
+    </section> -->
+      <script>
+        //   const popup = document.querySelector(".live-batch-popup");
+        //   const closePopupButton = document.querySelector(".live-batch-popup .ri-close-line");
+
+        //   function closePopupCard(event) {
+        //     let popupCard = document.querySelector('.live-batch-popup');
+        //     if (event.target === popupCard) {
+        //       document.body.style.overflow = "scroll"; // Disable scrolling
+        //       popupCard.style.display = "none";
+        //       const currentTime = new Date().getTime();
+        //       localStorage.setItem("lastPopupTime", currentTime);
+        //     }
+        //   }
+
+        //   // Function to show the popup
+        //   function showPopup() {
+        //     popup.style.display = "flex";
+        //     document.body.style.overflow = "hidden"; // Disable scrolling
+        //   }
+
+        //   // Function to close the popup
+        //   function redeemCoupon() {
+        //     document.body.style.overflow = "scroll"; // Disable scrolling
+        //     popup.style.display = "none";
+        //     // Store the current timestamp in localStorage
+        //     const currentTime = new Date().getTime();
+        //     localStorage.setItem("lastPopupTime", currentTime);
+        //     window.location.href='/courses'
+        //   }
+
+        //   function closePopup() {
+        //     document.body.style.overflow = "scroll"; // Disable scrolling
+        //     popup.style.display = "none";
+        //     // Store the current timestamp in localStorage
+        //     const currentTime = new Date().getTime();
+        //     localStorage.setItem("lastPopupTime", currentTime);
+        //   }
+
+        //   // Check if the popup needs to be shown
+        //   function checkPopup() {
+        //     const lastPopupTime = localStorage.getItem("lastPopupTime");
+        //     const currentTime = new Date().getTime();
+        //     const oneHour = 60 * 60 * 1000; // One hour in milliseconds
+        //     // Show the popup if it hasn't been shown in the last hour
+        //     if (!lastPopupTime || currentTime - lastPopupTime > oneHour) {
+        //       showPopup();
+        //     }
+        //   }
+
+        //   // Event listener to close the popup
+
+        //   // Run the checkPopup function on page load
+        //   popup.addEventListener("click", closePopupCard);
+        //   closePopupButton.addEventListener("click", closePopup);
+        //   window.onload = checkPopup;
+        //
+      </script>
+      <section id="view1" class="view">
+        <div class="top"></div>
+        <div class="middle">
+          <h1>
+            <span>
+              We only <span class="text-highlight"> teach </span> <br />
+              what we are really <br />
+              really <span class="italic">good</span> at. <br />
+            </span>
+          </h1>
+          <a
+            href=""
+            class="btn btn-primary checkout shadow-bottom shadow-primary"
+          >
+            <!-- TODO: add link to courses list page here, e.g. href="{% url 'courses' %}" -->
+            Check Courses-Make an Impact
+          </a>
+
+          <div class="side-text">
+            Get ready to
+            <span class="text-highlight">accelerate your career </span> with
+            customized courses and leave your mark in the tech industry
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="mileStones">
+            <div class="mileStone">
+              <div class="text">
+                <h2>250k+</h2>
+                <p>Students taught</p>
+              </div>
+            </div>
+
+            <div class="mileStone">
+              <div class="text">
+                <h2>20+</h2>
+                <p>Instructors</p>
+              </div>
+            </div>
+            <div class="mileStone">
+              <div class="text">
+                <h2>607K+</h2>
+                <p>Youtube Subs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="view" id="view2">
+        <div class="top">
+          <span>
+            we do whatever it takes to help you
+            <br />
+            <span class="text-highlight">understand the concepts.</span>
+          </span>
+        </div>
+        <div class="middle">
+          <div class="video-container">
+            <iframe
+              data-lazy-src="https://www.youtube.com/embed/60SRAWmMXyc"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+        <div class="bottom">
+          <a
+            href="https://www.youtube.com/@sheryians"
+            target="_blank"
+            class="btn btn-primary shadow-bottom shadow-primary"
+          >
+            Explore free learning
+          </a>
+        </div>
+      </section>
+
+      <section class="view" id="view3">
+        <div class="top">
+          <h1>
+            <span>Courses Offered.</span>
+          </h1>
+        </div>
+        <div class="bottom">
+          <div class="courses">
+            <div class="course-wrapper">
+              <a href="" class="course">
+                <div class="course-image">
+                  <div class="sub-tags">
+                    <div class="sub-tag">AI</div>
+                  </div>
+
+                  <img
+                    data-lazy-src="https://ik.imagekit.io/sheryians/courses_gif/undefined-Image_2_QUZ-yb_0T.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="course-body">
+                  <div class="top">
+                    <h2>Data Science and Analytics with GenAI</h2>
+                    <div class="tags">
+                      <p>Hinglish</p>
+                    </div>
+                  </div>
+                  <div class="bottom">
+                    <div class="left">
+                      <span>Limited Time Discount</span>
+                      <div>
+                        <p>₹ 6999</p>
+
+                        <small>₹ 15000</small>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div>53% OFF</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="course-body">
+                <h2>Data Science and Analytics with GenAI </h2>
+              </div>
+
+              <div class="course-body-tags">
+                <div class="devider"></div>
+                <div class="tags">
+                  
+                  <span class="tag">Programming</span>
+                  
+                  <span class="tag">Logic Building</span>
+                  
+                </div>
+              </div>
+
+              <div class="course-instructor">
+                <p>
+                  By <span>
+                    Akarsh Vyas
+                  </span>
+                </p>
+
+                
+                <span>₹ 8260</span>
+                
+
+              </div> -->
+              </a>
+
+              <a href="" class="buy-now btn btn-primary"> View Details </a>
+            </div>
+
+            <div class="course-wrapper">
+              <a href="" class="course">
+                <div class="course-image">
+                  <div class="sub-tags">
+                    <div class="sub-tag">Job Ready</div>
+                  </div>
+
+                  <img
+                    data-lazy-src="https://ik.imagekit.io/sheryians/Cohort%202.0/cohort-3_ekZjBiRzc-2_76HU4-Mz5z.jpeg?updatedAt=1757741949621"
+                    alt=""
+                  />
+                </div>
+                <div class="course-body">
+                  <div class="top">
+                    <h2>
+                      2.0 Job Ready AI Powered Cohort: Web + DSA + Aptitude
+                    </h2>
+                    <div class="tags">
+                      <small class="live">Live Batch</small>
+                      <p>Hinglish</p>
+                    </div>
+                  </div>
+                  <div class="bottom">
+                    <div class="left">
+                      <span>Early Bird Discount</span>
+                      <div>
+                        <p>₹ 5999</p>
+                        <strong>(+ GST)</strong>
+                        <small>₹ 11999</small>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div>50% OFF</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="" class="buy-now btn btn-primary"> View Details </a>
+            </div>
+
+            <div class="course-wrapper">
+              <a href="" class="course">
+                <div class="course-image">
+                  <div class="sub-tags">
+                    <div class="sub-tag">Logic Building</div>
+                  </div>
+
+                  <img
+                    data-lazy-src="https://ik.imagekit.io/sheryians/courses_gif/undefined-web-dsa-thumb-10_ZKtPNgmW_.webp_Zhu2w1to5h.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="course-body">
+                  <div class="top">
+                    <h2>DSA Domination Cohort</h2>
+                    <div class="tags">
+                      <small class="live">Live Batch</small>
+                      <p>Hinglish</p>
+                    </div>
+                  </div>
+                  <div class="bottom">
+                    <div class="left">
+                      <span>Limited Time Discount</span>
+                      <div>
+                        <p>₹ 6600</p>
+                        <strong>(+ GST)</strong>
+                        <small>₹ 7500</small>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div>12% OFF</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="" class="buy-now btn btn-primary"> View Details </a>
+            </div>
+
+            <div class="course-wrapper">
+              <a href="" class="course">
+                <div class="course-image">
+                  <div class="sub-tags">
+                    <div class="sub-tag">Job Ready</div>
+                  </div>
+
+                  <img
+                    data-lazy-src="https://ik.imagekit.io/sheryians/courses_gif/undefined-IMG_5100_7vO7pODI9.JPG"
+                    alt=""
+                  />
+                </div>
+                <div class="course-body">
+                  <div class="top">
+                    <h2>Job Ready AI Powered Cohort: Web + DSA + Aptitude</h2>
+                    <div class="tags">
+                      <small class="live">Live Batch</small>
+                      <p>Hinglish</p>
+                    </div>
+                  </div>
+                  <div class="bottom">
+                    <div class="left">
+                      <span>Limited Time Discount</span>
+                      <div>
+                        <p>₹ 5999</p>
+                        <strong>(+ GST)</strong>
+                        <small>₹ 11999</small>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div>50% OFF</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="" class="buy-now btn btn-primary"> View Details </a>
+            </div>
+
+            <div class="course-wrapper">
+              <a href="" class="course">
+                <div class="course-image">
+                  <div class="sub-tags">
+                    <div class="sub-tag">ANIMATION</div>
+                  </div>
+
+                  <img
+                    data-lazy-src="https://ik.imagekit.io/sheryians/courses_gif/undefined-maxresdefault_5-AHh9_1Y.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="course-body">
+                  <div class="top">
+                    <h2>Three.js Domination</h2>
+                    <div class="tags">
+                      <p>Hindi</p>
+                    </div>
+                  </div>
+                  <div class="bottom">
+                    <div class="left">
+                      <span>Limited time discount</span>
+                      <div>
+                        <p>₹ 2499</p>
+
+                        <small>₹ 3500</small>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div>29% OFF</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="" class="buy-now btn btn-primary"> View Details </a>
+            </div>
+
+            <div class="course-wrapper">
+              <a href="" class="course">
+                <div class="course-image">
+                  <div class="sub-tags">
+                    <div class="sub-tag">INDEPTH</div>
+                  </div>
+
+                  <img
+                    data-lazy-src="https://ik.imagekit.io/sheryians/courses_gif/undefined-javaas_Large_jY0Wighav__6PygWBZQ.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="course-body">
+                  <div class="top">
+                    <h2>Java & DSA Domination</h2>
+                    <div class="tags">
+                      <p>Hinglish</p>
+                    </div>
+                  </div>
+                  <div class="bottom">
+                    <div class="left">
+                      <span>Limited Time Discount</span>
+                      <div>
+                        <p>₹ 4999</p>
+
+                        <small>₹ 9999</small>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div>50% OFF</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="" class="buy-now btn btn-primary"> View Details </a>
+            </div>
+
+            <div class="course-wrapper">
+              <a href="" class="course">
+                <div class="course-image">
+                  <div class="sub-tags">
+                    <div class="sub-tag">Placements</div>
+                  </div>
+
+                  <img
+                    data-lazy-src="https://ik.imagekit.io/sheryians/courses_gif/undefined-apti_reasoning_45vyAnZ4y.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="course-body">
+                  <div class="top">
+                    <h2>Aptitude & Reasoning for Campus Placements</h2>
+                    <div class="tags">
+                      <p>Hinglish</p>
+                    </div>
+                  </div>
+                  <div class="bottom">
+                    <div class="left">
+                      <span>Limited Time Discount</span>
+                      <div>
+                        <p>₹ 1100</p>
+
+                        <small>₹ 1999</small>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div>45% OFF</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="" class="buy-now btn btn-primary"> View Details </a>
+            </div>
+
+            <div class="course-wrapper">
+              <a href="" class="course">
+                <div class="course-image">
+                  <div class="sub-tags">
+                    <div class="sub-tag">INDEPTH</div>
+                  </div>
+
+                  <img
+                    data-lazy-src="https://ik.imagekit.io/sheryians/courses_gif/Front-End_Domination__Create_Anything_with_Code-FRONTENDTHUBNAIL_Wf8WqcNJx.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="course-body">
+                  <div class="top">
+                    <h2>Front-End Domination: Create Anything with Code</h2>
+                    <div class="tags">
+                      <p>Hindi</p>
+                    </div>
+                  </div>
+                  <div class="bottom">
+                    <div class="left">
+                      <span>Limited Time Discount</span>
+                      <div>
+                        <p>₹ 3999</p>
+
+                        <small>₹ 9999</small>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div>60% OFF</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="" class="buy-now btn btn-primary"> View Details </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view4">
+        <div class="top">
+          <h1>
+            <span>
+              Top <span class="text-highlight">companies</span> our students
+              working with
+            </span>
+          </h1>
+        </div>
+        <img src="{% static 'images/companies_CcvVE6pUo.png' %}" alt="" />
+        <div class="bottom">
+          <a href="" class="btn btn-primary btn-explore"> Explore Courses </a>
+        </div>
+      </section>
+      <!-- <section class="view" id="view5">
+
+      <div class="top">
+        <h1 class="mobile-view">
+          FAQs
+        </h1>
+        <h1> Frequently <br> Asked <br> Question </h1>
+
+        <p>
+          <span>or drop email at</span>
+          <br>
+          <a href="mailto:hello@sheryians.com" class="text-highlight">
+            hello@sheryians.com
+          </a>
+        </p>
+
+      </div>
+      <div class="bottom">
+        <div class="accordian">
+          <label for="accordian_1">
+            <input type="checkbox" id="accordian_1" hidden>
+            <div class="left">
+              <span>
+                Lorem Ipsum is simply dummy text of the printing ?
+              </span>
+            </div>
+            <div class="right">
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+          </label>
+          <div class="content">
+            <div class="accordian-content">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type specimen book.
+            </div>
+            </p>
+          </div>
+
+        </div>
+
+        <hr>
+        <div class="accordian">
+          <label for="accordian_2">
+            <input type="checkbox" id="accordian_2" hidden>
+            <div class="left">
+              <span>
+                Lorem Ipsum is simply dummy text of the printing ?
+                Lorem Ipsum is simply dummy text of the printing ?
+              </span>
+            </div>
+            <div class="right">
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+          </label>
+          <div class="content">
+            <div class="accordian-content">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type specimen book.
+            </div>
+            </p>
+          </div>
+
+        </div>
+
+        <hr>
+
+      </div>
+
+    </section> -->
+
+      <!-- Google Tag Manager (noscript) -->
+      <noscript
+        ><iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-N9CBSHXN"
+          height="0"
+          width="0"
+          style="display: none; visibility: hidden"
+        ></iframe
+      ></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+      <section id="footer">
+        <div class="top">
+          <div class="footer-section">
+            <img
+              class="logo"
+              src="{% static 'images/light-logo_lNzGXRRlQ.png' %}"
+              alt=""
+            />
+            <p>Let’s connect with our socials</p>
+            <div class="socials">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/sheryians_coding_school"
+                ><i class="ri-instagram-fill"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://in.linkedin.com/company/the-sheryians-coding-school"
+                ><i class="ri-linkedin-box-fill"></i
+              ></a>
+              <a target="_blank" href="https://discord.gg/D23JkFqrgz"
+                ><i class="ri-discord-fill"> </i
+              ></a>
+              <a target="_blank" href="https://www.youtube.com/@sheryians"
+                ><i class="ri-youtube-fill"></i
+              ></a>
+              <a target="_blank" href="https://twitter.com/sheryians_"
+                ><i class="ri-twitter-fill"></i
+              ></a>
+            </div>
+          </div>
+          <!-- <div class="footer-section">
+      <h1>
+        OUR COURSES
+      </h1>
+      <div class="options">
+        <p>Popular Courses</p>
+        <p>Web Development</p>
+        <p>Data Science</p>
+        <p>Interview Preparation</p>
+        <p>Programming Languages</p>
+        <p>Events</p>
+        <p>FAQs</p>
+      </div>
+    </div> -->
+          <div class="footer-section">
+            <h1>COMPANY</h1>
+            <div class="options">
+              <a target="_blank" href="">About Us</a>
+              <a
+                href="/cdn-cgi/l/email-protection#761e131a1a1936051e13040f1f1718055815191b"
+                >Support</a
+              >
+              <a
+                target="_blank"
+                href="{% static 'Assets/privacy-policy/Privacy_policy.pdf' %}"
+                >Privacy Policy</a
+              >
+              <a
+                target="_blank"
+                href="{% static 'terms-and-conditions/Terms_and_Conditions.pdf' %}"
+                >Terms and Condition</a
+              >
+              <a
+                target="_blank"
+                href="{% static 'Pricing&Refund-Policy/Pricing-and-Refund_policy.pdf' %}"
+                >Pricing and Refund</a
+              >
+              <a target="_blank" href="">Hire From Us</a>
+              <a target="_blank" href="">Submit Projects</a>
+              <!-- <a target="_blank" href="https://ik.imagekit.io/sheryians/Bug_8EBE0pzVa.pdf">Bug Bounty</a> -->
+            </div>
+          </div>
+          <div class="footer-section">
+            <h1>COMMUNITY</h1>
+            <div class="options">
+              <!-- <a target="_blank" href="https://www.instagram.com/inertiabysheryians">Inertia</a> -->
+              <a target="_blank" href="https://discord.gg/D23JkFqrgz"
+                >Discord</a
+              >
+              <a target="_blank" href="{}">Jobs</a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h1>Get In Touch</h1>
+
+            <div class="options">
+              <div class="contact-info">
+                <p>Online: <span> 11am - 8pm</span></p>
+                <a href="tel:+919993478545">+91 9993478545</a>
+              </div>
+              <div class="contact-info">
+                <p>Offline: <span></span> 11am - 8pm</p>
+                <a href="tel:+919691778470">+91 96917 78470</a>
+              </div>
+              <a
+                href="/cdn-cgi/l/email-protection#2149444d4d4e61524944535848404f520f424e4c"
+                ><span
+                  class="__cf_email__"
+                  data-cfemail="f59d9099999ab5869d90878c9c949b86db969a98"
+                  >[email�protected]</span
+                ></a
+              >
+              <a
+                target="_blank"
+                href="https://www.google.com/maps/place/Sheryians+Coding+School/@23.2512609,77.4627502,17z/data=!3m1!4b1!4m6!3m5!1s0x397c43977890a98d:0x928a948dc6de732e!8m2!3d23.251256!4d77.4653251!16s%2Fg%2F11gvy2g2z8"
+                >23-B, Indrapuri Sector C, Bhopal(MP), 462021</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <h1 style="text-align: center">
+            Copyright � 2025 Sheryians Pvt. Ltd. <br />
+            All Rights Reserved.
+          </h1>
+        </div>
+      </section>
+    </main>
+    <link rel="stylesheet" href="{% static 'css/intlTelInput.css' %}" />
+    <nav>
+      <div class="header">
+        <div
+          class="left"
+          style="gap: 0.5rem"
+          onclick="window.location.href='{% url 'home' %}'"
+        >
+          <img src="{% static 'images/light-logo_lNzGXRRlQ_1.png' %}" alt="" />
+          <!-- <div style="height:1.8em; width:1px; background-color:white; display: inline-block; vertical-align: middle;"></div> -->
+          <span style="margin-top: 0.2em"
+            >Sheryians <br />
+            coding school</span
+          >
+        </div>
+        <div class="right">
+          <a href="{% url 'home' %}" class="nav-item">
+            <span>Home</span>
+          </a>
+          <a href="" class="nav-item">
+            <!-- TODO: add link to courses list page here, e.g. href="{% url 'courses' %}" -->
+            <span>Courses</span>
+          </a>
+          <div class="nav-item bootcamp-dropdown">
+            <span
+              class="dropdown-toggle"
+              style="font-weight: 600; font-size: 1.2rem"
+            >
+              <a href="">Bootcamp</a>
+
+              <i style="margin-top: 5px" class="ri-arrow-down-s-line"></i>
+            </span>
+            <div class="dropdown-menu">
+              <a href="" class="dropdown-item">
+                <span>Offline KODR 3.0</span>
+                <small>Intensive Full-Stack Offline Bootcamp</small>
+              </a>
+              <a href="" class="dropdown-item">
+                <span>Online KODEX</span>
+                <small>Intensive Full-Stack Online Bootcamp</small>
+              </a>
+            </div>
+          </div>
+
+          <button
+            onclick="openRequestCallback()"
+            class="nav-item mobile-item request-callback"
+          >
+            <i class="ri-phone-line"></i>
+            <span> Request Callback </span>
+          </button>
+
+          <button class="nav-item auth-user">
+            <a href="" class="btn btn-primary sign-in"> Sign In </a>
+          </button>
+
+          <button class="menu nav-item">
+            <div class="menu-toggle">
+              <div class="line line1"></div>
+              <div class="line line2"></div>
+            </div>
+
+            <div class="menu-panel">
+              <div class="menu-header">
+                <h1>Menu</h1>
+              </div>
+              <div class="menu-items">
+                <a
+                  href="{% url 'home' %}"
+                  class="nav-item menu-item mobile-item"
+                  >Home</a
+                >
+                <a href="" class="nav-item menu-item mobile-item">
+                  <!-- TODO: add link to courses list page here, e.g. href="{% url 'courses' %}" -->
+                  Courses
+                </a>
+                <div class="menu-bootcamp">
+                  <div class="menu-bootcamp-header">
+                    <span style="font-size: 1.9rem">Bootcamps</span>
+                  </div>
+                  <div class="menu-bootcamp-content">
+                    <a
+                      href=""
+                      class="nav-item menu-item mobile-item bootcamp-item"
+                    >
+                      <span>Offline KODR 3.0</span>
+                      <small>Intensive Full-Stack Offline Bootcamp</small>
+                    </a>
+                    <a
+                      href=""
+                      class="nav-item menu-item mobile-item bootcamp-item"
+                    >
+                      <span>Online KODEX</span>
+                      <small>Intensive Full-Stack Online Bootcamp</small>
+                    </a>
+                  </div>
+                </div>
+                <!-- <a href="https://reimagine.sheryians.com" class="nav-item menu-item mobile-item">Re-Imagine</a -->
+
+                <a href="" class="nav-item menu-item mobile-item">Sign In</a>
+              </div>
+            </div>
+          </button>
+        </div>
+
+        <script
+          data-cfasync="false"
+          src="{% static 'js/email-decode.min.js' %}"
+        ></script>
+        <script defer="">
+          let lastTime = 0;
+          let maxFPS = 60; // Change this value to set the maximum FPS
+          let direction = 1;
+
+          const nav = document.querySelector("nav");
+          let lastScrollY = window.scrollY;
+          let navRect = null;
+
+          function navPosition(timestamp) {
+            if (!lastTime) {
+              lastTime = timestamp;
+            }
+            const elapsed = timestamp - lastTime;
+            if (elapsed > 1000 / maxFPS) {
+              lastTime = timestamp;
+
+              if (navRect) {
+                if (direction === 1 && window.scrollY > 0) {
+                  nav.style.transform = `translateY(-${navRect.height}px)`;
+                } else {
+                  if (document.querySelector(".holyoffer")) {
+                    nav.style.transform = `translateY(40px)`;
+                  } else {
+                    nav.style.transform = `translateY(0px)`;
+                  }
+                }
+              } else {
+                navRect = nav.getBoundingClientRect();
+              }
+
+              if (lastScrollY > window.scrollY) {
+                direction = -1;
+              }
+
+              if (lastScrollY < window.scrollY) {
+                direction = 1;
+              }
+              lastScrollY = window.scrollY;
+            }
+            requestAnimationFrame(navPosition);
+          }
+          requestAnimationFrame(navPosition);
+
+          if (document.querySelector(".notification-toggle")) {
+            document
+              .querySelector(".notification-toggle")
+              .addEventListener("click", () => {
+                document
+                  .querySelector(".notification-panel")
+                  .classList.toggle("show");
+              });
+
+            document
+              .querySelector(".remove-notification-panel")
+              .addEventListener("click", () => {
+                document
+                  .querySelector(".notification-panel")
+                  .classList.remove("show");
+              });
+          }
+
+          // Menu toggle
+          document
+            .querySelector(".menu-toggle")
+            .addEventListener("click", function () {
+              if (this.classList.contains("menu-show")) {
+                this.classList.add("menu-close");
+              } else {
+                this.classList.remove("menu-close");
+              }
+              this.classList.toggle("menu-show");
+            });
+
+          // Bootcamp dropdown in mobile menu
+          document
+            .querySelector(".menu-bootcamp-header")
+            .addEventListener("click", function () {
+              const menuBootcamp = this.closest(".menu-bootcamp");
+              menuBootcamp.classList.toggle("active");
+            });
+
+          function handleImageError(e) {
+            document.querySelector(".text-profile-initial").innerHTML = "A";
+            document.querySelector(
+              ".text-profile-initial"
+            ).style.backgroundColor = "var(--accent-color)";
+            document.querySelector(".text-profile-initial").style.display =
+              "flex";
+            document.querySelector(
+              ".text-profile-initial"
+            ).style.justifyContent = "center";
+            document.querySelector(".text-profile-initial").style.alignItems =
+              "center";
+          }
+        </script>
+      </div>
+
+      <section class="popup request-callback">
+        <div class="bg" onclick="closePopup()"></div>
+        <div class="center">
+          <div class="text">
+            <h3>Request a callback</h3>
+            <small
+              >Fill the form below to request a callback from our team.</small
+            >
+            <form action="" method="POST" onsubmit="requestCallback(event)">
+              {% csrf_token %}
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  required=""
+                />
+                <span class="error">Invalid Name</span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input
+                  type="tel"
+                  name="contact"
+                  id="phone"
+                  placeholder="Phone"
+                  required=""
+                />
+                <span class="error">Invalid Phone</span>
+              </div>
+              <div class="form-group">
+                <label for="datetime-request-callback"
+                  >When should we call you?
+                  <i class="ri-calendar-line"></i>
+                </label>
+                <input
+                  type="datetime-local"
+                  name="datetime"
+                  id="datetime-request-callback"
+                  required=""
+                  value="2025-12-01T13:30"
+                />
+                <span class="error">Invalid Date and Time</span>
+              </div>
+              <div class="form-group">
+                <label for="datetime-request-callback"
+                  >Enquiry For
+                  <i class="ri-calendar-line"></i>
+                </label>
+                <select name="enquiryFor">
+                  <option selected="" value="online">
+                    Online Courses (Website)
+                  </option>
+                  <option value="offline">Offline Batches (Bhopal)</option>
+                </select>
+                <span class="error">Invalid Date and Time</span>
+              </div>
+              <div class="form-group courseName">
+                <label for="datetime-request-callback"
+                  >Which course
+                  <i class="ri-calendar-line"></i>
+                </label>
+                <select name="courseName">
+                  <option selected="" value="kodr">KODR</option>
+                  <option value="web-development">Web Development</option>
+                  <option value="dsa">DSA</option>
+                  <option value="data-science">Python & Data Science</option>
+                  <option value="java">Java</option>
+                  <option value="c-programming">C Programming</option>
+                  <option value="android">Android</option>
+                  <option value="others">Others</option>
+                </select>
+                <span class="error">Invalid Date and Time</span>
+              </div>
+              <input
+                style="display: none"
+                type="text"
+                name="courseName"
+                value=""
+              />
+              <div class="form-group submit">
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  style="
+                    font-size: 1.3rem;
+                    width: 100%;
+                    background-color: var(--accent-color);
+                    color: black;
+                  "
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+          <div onclick="closePopup()" class="closePopup">
+            <i class="ri-close-circle-line"></i>
+          </div>
+        </div>
+      </section>
+      <style>
+        .bootcamp-dropdown {
+          position: relative;
+          cursor: pointer;
+        }
+
+        .bootcamp-dropdown .dropdown-toggle {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          padding: 8px 12px;
+          border-radius: 8px;
+          transition: all 0.3s ease;
+        }
+
+        .bootcamp-dropdown:hover .dropdown-toggle {
+          background: rgba(255, 255, 255, 0.1);
+        }
+
+        .bootcamp-dropdown .dropdown-menu {
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%) translateY(10px);
+          background: var(--background-color);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 12px;
+          padding: 8px;
+          min-width: 220px;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .bootcamp-dropdown:hover .dropdown-menu {
+          opacity: 1;
+          visibility: visible;
+          transform: translateX(-50%) translateY(0);
+        }
+
+        .bootcamp-dropdown .dropdown-item {
+          display: flex;
+          flex-direction: column;
+          padding: 12px 16px;
+          border-radius: 8px;
+          transition: all 0.3s ease;
+          text-decoration: none;
+          color: inherit;
+        }
+
+        .bootcamp-dropdown .dropdown-item:hover {
+          background: rgba(128, 128, 128, 0.175);
+          transform: translateY(-1px);
+          box-shadow: 0 2px 8px rgba(128, 128, 128, 0.1);
+        }
+
+        .bootcamp-dropdown .dropdown-item span {
+          font-weight: 500;
+          font-size: 1rem;
+        }
+
+        .bootcamp-dropdown .dropdown-item small {
+          font-size: 0.8rem;
+          opacity: 0.8;
+          margin-top: 2px;
+        }
+
+        .menu-bootcamp {
+          padding: 8px 0;
+          margin: 4px 0;
+        }
+
+        .menu-bootcamp-header {
+          padding: 8px 20px;
+          color: inherit;
+          opacity: 0.85;
+        }
+
+        .bootcamp-item {
+          display: flex !important;
+          flex-direction: column;
+          align-items: start;
+          gap: 2px;
+        }
+
+        .bootcamp-item small {
+          font-size: 0.8rem;
+          opacity: 0.7;
+        }
+
+        /* Mobile Menu Bootcamp Styles */
+        .menu-bootcamp {
+          overflow: hidden;
+          transition: all 0.3s ease;
+        }
+
+        .menu-bootcamp-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 16px 20px;
+          cursor: pointer;
+          position: relative;
+        }
+
+        .menu-bootcamp-header::after {
+          content: "\ea4e";
+          font-family: "remixicon";
+          font-size: 1.2rem;
+          transition: transform 0.3s ease;
+        }
+
+        .menu-bootcamp-content {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease;
+        }
+
+        .menu-bootcamp.active .menu-bootcamp-header::after {
+          transform: rotate(180deg);
+        }
+
+        .menu-bootcamp.active .menu-bootcamp-content {
+          max-height: 200px;
+        }
+
+        .menu-bootcamp .bootcamp-item {
+          padding: 12px 20px;
+          padding-left: 28px;
+          /* small indent so items are left but not flush */
+          opacity: 0.9;
+          transition: all 0.18s ease;
+          text-align: left;
+          /* ensure left alignment instead of centered */
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .menu-bootcamp .bootcamp-item:hover {
+          opacity: 1;
+          background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Force left alignment and small indent for bootcamp items on mobile */
+        .menu-panel .menu-items .menu-bootcamp,
+        .menu-panel .menu-items .menu-bootcamp .menu-bootcamp-content {
+          display: block !important;
+          text-align: left !important;
+        }
+
+        .menu-bootcamp .menu-item,
+        .menu-bootcamp .nav-item,
+        .menu-bootcamp .bootcamp-item {
+          text-align: left !important;
+          padding-left: 40px !important;
+          /* modest indent */
+          justify-content: flex-start !important;
+          align-items: flex-start !important;
+          display: block !important;
+        }
+
+        .menu-bootcamp .bootcamp-item span,
+        .menu-bootcamp .bootcamp-item small {
+          display: block !important;
+          width: 100% !important;
+          text-align: left !important;
+          margin-left: 0 !important;
+        }
+      </style>
+      <section onclick="closePopup()" class="popup discordJoinPopup">
+        <div class="center">
+          <div class="images">
+            <img
+              src="{% static 'images/Sheryians_Logo_wFKd9VClG.png' %}"
+              alt=""
+            />
+            <i class="ri-add-line"></i>
+            <img src="{% static 'images/discord.png' %}" alt="" />
+          </div>
+          <div class="text">
+            <h3>Authorize discord to access course support</h3>
+            <small>
+              in order to access our course support channel on the discord you
+              have to authorize us from the discord.
+            </small>
+
+            <div class="buttons">
+              <button class="cancel">Cancel</button>
+              <button onclick="window.open('')" class="authorize">
+                Authorize
+              </button>
+            </div>
+          </div>
+          <div onclick="closeDiscordPopup()" class="closePopup">
+            <i class="ri-close-circle-line"></i>
+          </div>
+        </div>
+      </section>
+    </nav>
+    <script
+      defer=""
+      src="{% static 'js/axios.min.js' %}"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="{% static 'js/intlTelInput.min.js' %}"></script>
+    <script>
+      // const darkIcon = 'https://ik.imagekit.io/sheryians/light-logo_lNzGXRRlQ.png';
+      // const lightIcon = 'https://ik.imagekit.io/sheryians/dark-logo_TwETv_UJBX.png';
+
+      // const updateFavicons = () => {
+      //   const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      //   const newHref = isDark ? darkIcon : lightIcon;
+      //   console.log(newHref);
+      //   // Get all link tags with rel=icon or rel=apple-touch-icon
+      //   document.querySelectorAll('link[rel="icon"], link[rel="apple-touch-icon"]').forEach(link => {
+      //     link.href = newHref;
+      //   });
+      // };
+
+      // // Initial call
+      // updateFavicons();
+
+      // // Listen for theme changes
+      // window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicons);
+    </script>
+    <script>
+      // Initialize the intl-tel-input for the phone input
+      const phnInp = document.getElementById("phone");
+      const iti = intlTelInput(phnInp, {
+        initialCountry: "IN",
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js", // For number formatting
+      });
+
+      // Add validation before form submission
+    </script>
+
+    <script defer="">
+      function lazyLoadImages(attribute) {
+        const lazyImages = document.querySelectorAll(`[${attribute}]`);
+
+        const options = {
+          root: null, // viewport
+          rootMargin: "0px",
+          threshold: 0.1, // load when 10% of the image is visible
+        };
+
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.src = img.dataset.lazySrc;
+              img.removeAttribute("data-lazy-src");
+              observer.unobserve(img);
+            }
+          });
+        }, options);
+
+        lazyImages.forEach((image) => {
+          imageObserver.observe(image);
+        });
+      }
+      async function openNotification(link, id) {
+        try {
+          axios.post("/classroom/notifications/update", {
+            notificationId: id,
+          });
+          window.location.href = link;
+        } catch (err) {
+          console.log(err);
+        }
+      }
+
+      function renderTimeSinceDate() {
+        document.querySelectorAll(".notifications small").forEach((elem) => {
+          elem.textContent = timeSince(
+            new Date(elem.getAttribute("data-time"))
+          );
+        });
+      }
+
+      function timeSince(date) {
+        // Get the current date
+        const now = new Date();
+
+        // Calculate the difference in milliseconds
+        const difference = now.getTime() - date.getTime();
+
+        // Handle negative difference (future date)
+        if (difference < 0) {
+          return "Date in the future";
+        }
+
+        // Calculate days and months
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const months = Math.floor(days / 30);
+
+        // Determine unit (days or months)
+        const unit = months >= 1 ? "months" : "days";
+        const value = months >= 1 ? months : days;
+
+        // Format the output string
+        const output = `${value} ${unit} ago`;
+
+        return output;
+      }
+
+      async function joinDiscord(channel_id, role_id, user_id, question) {
+        document.querySelector(".askDoubtBtn").style.opacity = "0.5";
+        document.querySelector(".askDoubtBtn").style.pointerEvents = "none";
+        let response = await axios.post(
+          `/classroom/is_user_in_guild/${user_id}`
+        );
+        const isUserInGuild = response.data.is_user_in_guild;
+
+        if (!isUserInGuild) {
+          openDiscordPopup();
+          return;
+        }
+
+        const currentLectureId = document
+          .querySelector(".currentPlaying")
+          .getAttribute("data-lecture-id");
+        try {
+          const res = await axios.post(
+            `/classroom/ticket/${currentLectureId}`,
+            { question }
+          );
+          console.log(res);
+          document.querySelector(".askDoubtBtn").style.opacity = "1";
+          document.querySelector(".askDoubtBtn").style.pointerEvents = "all";
+          window.open(res.data.url);
+        } catch (err) {
+          document.querySelector(".askDoubtBtn").style.opacity = "1";
+          document.querySelector(".askDoubtBtn").style.pointerEvents = "all";
+          console.log(err);
+          document.querySelector(".discordJoinPopup").remove();
+        }
+      }
+
+      async function enterDiscord(channel_id, role_id, user_id) {
+        let response = await axios.post(
+          `/classroom/is_user_in_guild/${user_id}`
+        );
+        const isUserInGuild = response.data.is_user_in_guild;
+
+        if (!isUserInGuild) {
+          openDiscordPopup();
+          return;
+        }
+
+        window.open(`/classroom/joinChannel/${channel_id}/${role_id}`);
+      }
+
+      function openDiscordPopup() {
+        document.querySelector(".discordJoinPopup").style.display = "flex";
+        document.querySelector(".discordJoinPopup").classList.add("active");
+        document.querySelector(".discordJoinPopup").style.opacity = "1";
+        try {
+          if (lenis) lenis.stop();
+        } catch (err) {}
+      }
+
+      function closePopup() {
+        document.querySelectorAll(".popup").forEach((pop) => {
+          pop.classList.remove("active");
+          pop.style.display = "none";
+          pop.style.opacity = "0";
+        });
+
+        try {
+          if (lenis) lenis.start();
+        } catch (er) {}
+      }
+
+      function openRequestCallback() {
+        const requestCallback = document.querySelector(
+          ".popup.request-callback"
+        );
+        requestCallback.style.display = "flex";
+        requestCallback.classList.add("active");
+        requestCallback.style.opacity = "1";
+        console.log("object");
+      }
+
+      function openRequestCallbackSpecific(courseName) {
+        console.log(courseName);
+        const requestCallback = document.querySelector(
+          ".popup.request-callback"
+        );
+        document
+          .querySelector(".courseName")
+          .setAttribute("courseName", courseName);
+        requestCallback.querySelector(".courseName").value = courseName;
+        requestCallback.style.display = "flex";
+        requestCallback.classList.add("active");
+        requestCallback.style.opacity = "1";
+      }
+
+      function requestCallback(event) {
+        event.preventDefault();
+
+        console.log(event.target);
+
+        const nameInput = event.target.querySelector("#name");
+        const phoneInput = event.target.querySelector("#phone");
+        const datetimeInput = event.target.querySelector(
+          "#datetime-request-callback"
+        );
+
+        let isValid = true;
+
+        if (!nameInput.value.trim()) {
+          nameInput.classList.add("error");
+          isValid = false;
+        } else {
+          nameInput.classList.remove("error");
+        }
+
+        if (!iti.isValidNumber()) {
+          phoneInput.classList.add("error");
+          isValid = false;
+        } else {
+          phoneInput.classList.remove("error");
+        }
+
+        if (!datetimeInput.value.trim()) {
+          datetimeInput.classList.add("error");
+          isValid = false;
+        } else {
+          datetimeInput.classList.remove("error");
+        }
+
+        if (!isValid) {
+          return;
+        }
+
+        const form = event.target;
+        const data = new FormData(form);
+        console.log(data.get("enquiryFor"));
+
+        if (data.get("enquiryFor") == "online") {
+          data.set("courseName", "NA");
+        }
+
+        console.log(iti.getNumber());
+        axios
+          .post(form.action, {
+            name: data.get("name"),
+            contact: iti.getNumber(),
+            datetime: data.get("datetime"),
+            enquiryFor: data.get("enquiryFor"),
+            courseName: data.get("courseName"),
+          })
+          .then((response) => {
+            console.log(response);
+            closePopup();
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      }
+
+      lazyLoadImages("data-lazy-src");
+      lazyLoadImages("srcset");
+
+      // Show/hide courseName input based on enquiryFor selection
+      function toggleCourseNameField() {
+        const courseNameContainer = document.querySelector(".courseName");
+        const enquirySelect = document.querySelector(
+          'select[name="enquiryFor"]'
+        );
+
+        if (enquirySelect && courseNameContainer) {
+          if (enquirySelect.value === "offline") {
+            courseNameContainer.style.display = "flex";
+          } else {
+            courseNameContainer.style.display = "none";
+          }
+        }
+      }
+
+      // Add event listener to enquiry select dropdown
+      document.addEventListener("DOMContentLoaded", function () {
+        const enquirySelect = document.querySelector(
+          'select[name="enquiryFor"]'
+        );
+        if (enquirySelect) {
+          // Set initial state
+          toggleCourseNameField();
+
+          // Add event listener for changes
+          enquirySelect.addEventListener("change", toggleCourseNameField);
+        }
+      });
+    </script>
+
+    <script>
+      const phoneNumber = document.getElementById("phoneNumber");
+      const contactNumberValidation = document.getElementById(
+        "contactNumberValidation"
+      );
+      const otpErrorMessage = document.getElementById("otpErrorMessage");
+      const email = "";
+      const indianMobileNumberRegex = /^(\+91|91)[6-9]\d{9}$/;
+
+      const sendOTP = async (phoneNumber) => {
+        const response = await fetch("/signup/send-otp", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ phoneNumber }),
+        });
+        const data = await response.json();
+        return data;
+      };
+
+      let interval; // Declare interval in the outer scope
+
+      // Function to start the timer for OTP resend
+      const startTimer = () => {
+        stopTimer();
+        let time = 30;
+        const timer = document.querySelector(".timer");
+        const resendOTP = document.getElementById("resend-otp");
+        const resendOTPText = document.getElementById("resend-otp-text");
+        resendOTP.style.pointerEvents = "none";
+        resendOTP.style.cursor = "not-allowed";
+        resendOTPText.textContent = "Resend OTP in";
+        interval = setInterval(() => {
+          time -= 1;
+          timer.textContent = `0:${time < 10 ? `0${time}` : time}`;
+          if (time === 0) {
+            clearInterval(interval);
+            resendOTP.style.cursor = "pointer";
+            resendOTP.style.pointerEvents = "auto";
+            timer.textContent = "";
+            resendOTPText.textContent = "Resend OTP";
+          }
+        }, 1000);
+      };
+
+      // Function to stop the timer for OTP resend and clear the timer function
+      const stopTimer = () => {
+        const timer = document.querySelector(".timer");
+        timer.textContent = "";
+        clearInterval(interval); // Clear the interval
+      };
+
+      document
+        .getElementById("resend-otp")
+        .addEventListener("click", async () => {
+          const timer = document.querySelector(".timer");
+          const phoneNumber =
+            "+91" + document.getElementById("phoneNumber").value;
+          if (timer.textContent === "") {
+            const response = await fetch("/signup/resend-otp", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ phoneNumber }),
+            });
+            const data = await response.json();
+            if (!data.message == "success") {
+              document.getElementById("otpErrorMessage").textContent =
+                data.reason || "Error while sending OTP";
+            }
+            // clear the OTP input fields
+            document.querySelectorAll(".otp-input").forEach((input) => {
+              input.value = "";
+            });
+            document.getElementById("digit1").focus();
+            resetOTPInput();
+            document.getElementById("otpErrorMessage").textContent = "";
+            startTimer();
+          }
+        });
+
+      function disableOTPInputsAndStartTimer() {
+        const otpInputs = document.querySelectorAll(".otp-input");
+        otpInputs.forEach((input) => {
+          input.disabled = true;
+          input.opacity = 0.5;
+        });
+        // startTimer();
+      }
+
+      function validateOTP(otp) {
+        updateLoader();
+        const phoneNumber =
+          "+91" + document.getElementById("phoneNumber").value;
+        disableOTPInputsAndStartTimer();
+        fetch("/signup/verify-account", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ phoneNumber, otp, email }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.message === "success") {
+              // Proceed to the next step
+              setOTPInput("success");
+              document.querySelector(".phoneNumberPopup").remove();
+              window.location.href = data.redirectTo;
+            } else {
+              setOTPInput("error");
+              otpErrorMessage.textContent = data.reason || "Invalid OTP";
+            }
+          })
+          .catch((error) => {
+            console.error("Error verifying OTP:", error);
+            otpErrorMessage.textContent =
+              "An error occurred. Please try again.";
+          })
+          .finally(() => {
+            resetLoader();
+          });
+      }
+
+      // OTP input fields auto focus and backspace, paste functionality
+      const otpInputs = document.querySelectorAll(".otp-input");
+
+      otpInputs.forEach((input, index) => {
+        document.querySelectorAll(".otp-input").forEach((inp) => {
+          inp.style.border = "1px solid transparent";
+        });
+        input.addEventListener("input", (e) => {
+          // Allow only digits
+          input.value = input.value.replace(/[^0-9]/g, "");
+
+          // Move to next input if a digit is entered
+          if (input.value.length === 1 && index < otpInputs.length - 1) {
+            otpInputs[index + 1].focus();
+          }
+
+          // Collect the OTP from all inputs
+          const otp = Array.from(otpInputs)
+            .map((input) => input.value)
+            .join("");
+
+          // If all digits are entered, validate the OTP
+          if (otp.length === otpInputs.length) {
+            validateOTP(otp);
+          }
+        });
+
+        // Handle backspace to move focus to the previous input
+        input.addEventListener("keydown", (e) => {
+          if (e.key === "Backspace" && input.value === "" && index > 0) {
+            otpInputs[index - 1].focus();
+          }
+        });
+
+        // Handle paste event
+        input.addEventListener("paste", (e) => {
+          e.preventDefault();
+          const pasteData = e.clipboardData.getData("text").replace(/\D/g, "");
+          const digits = pasteData.split("");
+          otpInputs.forEach((input, idx) => {
+            input.value = digits[idx] || "";
+          });
+
+          // Focus the next input or the last one
+          const nextInputIndex =
+            digits.length < otpInputs.length
+              ? digits.length
+              : otpInputs.length - 1;
+          otpInputs[nextInputIndex].focus();
+
+          // Collect the OTP from all inputs
+          const otp = Array.from(otpInputs)
+            .map((input) => input.value)
+            .join("");
+
+          // If all digits are entered, validate the OTP
+          if (otp.length === otpInputs.length) {
+            validateOTP(otp);
+          }
+        });
+      });
+
+      // check email validation while typing
+
+      // Debounce function to limit the rate of function calls
+      function debounce(func, delay) {
+        let debounceTimer;
+        return function (...args) {
+          const context = this;
+          clearTimeout(debounceTimer);
+          debounceTimer = setTimeout(() => func.apply(context, args), delay);
+        };
+      }
+
+      // Event listener for email input
+
+      const phoneNumberInput = document.getElementById("phoneNumber");
+      // Event listener for phone number input
+      phoneNumberInput.addEventListener(
+        "input",
+        debounce(async function (e) {
+          const value = e.target.value.trim();
+
+          if (value.length != 10) {
+            return;
+          }
+
+          const formattedNumber = `+91${value}`;
+
+          // Validate phone number format (10 digits)
+          if (indianMobileNumberRegex.test(formattedNumber)) {
+            contactNumberValidation.textContent =
+              "Checking phone number availability...";
+            contactNumberValidation.style.color = "white";
+
+            try {
+              const response = await fetch("/signup/check-phone-number", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ phoneNumber: formattedNumber }),
+              });
+
+              const data = await response.json();
+
+              if (data.message !== "success") {
+                contactNumberValidation.textContent =
+                  data.reason || "Error checking phone number";
+                contactNumberValidation.style.color = "var(--error-color)";
+              } else {
+                contactNumberValidation.textContent = "";
+                setTimeout(() => {
+                  document
+                    .querySelector("#otp-verification")
+                    .scrollIntoView({ behavior: "smooth" });
+                }, 0);
+                // clear the OTP input fields
+                document.querySelectorAll(".otp-input").forEach((input) => {
+                  input.value = "";
+                });
+                document.querySelector(".otp-input").focus();
+                resetOTPInput();
+                document.getElementById("otpErrorMessage").textContent = "";
+
+                contactNumberValidation.textContent = "";
+                document.getElementById("otp-mobile-number").textContent =
+                  value;
+                startTimer();
+                sendOTP(formattedNumber).then((data) => {
+                  if (!data.message == "success") {
+                    contactNumberValidation.textContent =
+                      data.reason || "Error while sending OTP";
+                  }
+                });
+              }
+            } catch (error) {
+              console.error("Error checking phone number:", error);
+              contactNumberValidation.textContent =
+                "Error checking phone number";
+              contactNumberValidation.style.color = "var(--error-color)";
+            }
+          } else {
+            contactNumberValidation.textContent = "Invalid phone number";
+            contactNumberValidation.style.color = "var(--error-color)";
+          }
+        }, 500)
+      ); // Adjust the delay as needed (e.g., 500 milliseconds)
+
+      function updateLoader() {
+        document.querySelectorAll(".otp-input").forEach((input) => {
+          input.disabled = true;
+          input.style.cursor = "not-allowed";
+          input.style.opacity = "0.5";
+        });
+      }
+
+      function resetLoader() {
+        document.querySelectorAll(".otp-input").forEach((input) => {
+          input.disabled = false;
+          input.style.cursor = "text";
+          input.style.opacity = "1";
+        });
+      }
+
+      function setOTPInput(type) {
+        if (type == "error") {
+          document.querySelectorAll(".otp-input").forEach((input) => {
+            input.style.border = "1px solid var(--error-color)";
+          });
+        } else {
+          document.querySelectorAll(".otp-input").forEach((input) => {
+            input.style.border = "1px solid green";
+          });
+        }
+      }
+
+      function resetOTPInput() {
+        document.querySelectorAll(".otp-input").forEach((input) => {
+          input.style.border = "1px solid transparent";
+        });
+      }
+
+      function copyToClipboard(coupon) {
+        let text = document.querySelector(".clicktocopy");
+        let textDiv = document.querySelector(".copy");
+        textDiv.style.backgroundColor = "#8ED968";
+        textDiv.style.setProperty("--arrow-color", "#559038FF");
+        setTimeout(() => {
+          text.textContent = "Copied";
+        }, 25);
+        setTimeout(() => {
+          text.textContent = "Click to copy";
+          textDiv.style.setProperty("--arrow-color", "black");
+          textDiv.style.backgroundColor = "black";
+        }, 2000);
+        navigator.clipboard.writeText(coupon);
+      }
+    </script>
+
+    <script>
+      let chatLoading = false;
+      let IframeLectureId = null;
+      async function openChat() {
+        const currentLectureId = document
+          .querySelector(".currentPlaying[data-type=video]")
+          ?.getAttribute("data-lecture-id");
+
+        try {
+          const chatScreen = document.querySelector(".chat-screen");
+
+          if (!chatScreen) {
+            console.log("No chat screen found");
+            return;
+          }
+
+          chatScreen.classList.remove("loaded");
+
+          chatScreen.style.display = "flex";
+
+          if (
+            chatScreen.querySelector("iframe") &&
+            IframeLectureId == currentLectureId
+          ) {
+            chatScreen.classList.add("loaded");
+            return;
+          }
+          if (chatLoading && IframeLectureId == currentLectureId) {
+            chatScreen.classList.add("loaded");
+            console.log("Chat is already loading");
+            return;
+          }
+
+          chatLoading = true;
+          const response = await axios.get(
+            `/classroom/get-chat-token/${currentLectureId}`
+          );
+
+          const data = response.data;
+
+          if (!data.iframeUrl) {
+            console.log("No iframe URL found");
+            chatScreen.style.display = "none";
+            return;
+          }
+
+          chatScreen.classList.add("loaded");
+          if (chatScreen.querySelector("iframe")) {
+            chatScreen.querySelector("iframe").remove();
+          }
+          const iframe = document.createElement("iframe");
+          iframe.src = data.iframeUrl;
+          iframe.allow =
+            "camera; microphone; fullscreen; display-capture; clipboard-read; clipboard-write";
+          chatScreen.appendChild(iframe);
+
+          IframeLectureId = currentLectureId;
+        } catch (err) {
+          console.log(err);
+        }
+      }
+
+      async function closeChat() {
+        const chatScreen = document.querySelector(".chat-screen");
+        if (chatScreen) {
+          chatScreen.style.display = "none";
+        }
+      }
+
+      async function openChatOnNewPage() {
+        const currentLectureId = document
+          .querySelector(".currentPlaying[data-type=video]")
+          ?.getAttribute("data-lecture-id");
+        if (!currentLectureId) {
+          console.log("No current video lecture found");
+          return;
+        }
+
+        window.open(`/classroom/chat/${currentLectureId}`, "_blank");
+      }
+    </script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N9CBSHXN"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  </body>
+</html>
